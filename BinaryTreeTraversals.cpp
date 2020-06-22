@@ -1,6 +1,6 @@
 /*
 BINARY TREE TRAVERSALS( INORDER , PREORDER, POSTORDER )
- __	    __  __  		  __
+ __	    __  	  __
 |  |   |  | \ \          / /
 |  |___|  |  \ \        / /
 |  arsh   |   \ \      / /
