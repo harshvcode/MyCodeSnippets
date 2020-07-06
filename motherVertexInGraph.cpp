@@ -1,13 +1,7 @@
 /*
+_._._._._harshvcode_._._._._
 # Find mother vertex of a graph.
 # Link: https://www.geeksforgeeks.org/find-a-mother-vertex-in-a-graph/
- __	    __  __  		  __
-|  |   |  | \ \          / /
-|  |___|  |  \ \        / /
-|  arsh   |   \ \      / /
-|   ___   |    \ \____/ /
-|  |   |  |     \ code /
-|__|   |__|      \____/
 */
 #include<bits/stdc++.h>
 using namespace std;
