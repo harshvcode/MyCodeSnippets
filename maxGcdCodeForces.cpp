@@ -20,7 +20,7 @@ LINK - https://codeforces.com/problemset/problem/1370/A
 #define MPI map<int,int> mp
 #define MPC map<char,int> mp
 #define MPS map<string,int> mp
-#define Q ios::sync_with_stdio;cin.tie(0);cout.tie(0)
+#define Q ios::sync_with_stdio(0);cin.tie(0);cout.tie(0)
 #define FL(arr) forward_list<int> fl;
 using namespace std;
 int main(){
