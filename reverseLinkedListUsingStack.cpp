@@ -13,11 +13,21 @@ class Node{
 		int data;
 		Node* next;
 };
-void push(Node** head, int data){
+Node *last=NULL;
+void push(Node **head, int data){
+	if(last == NULL){
+		Node *newnode=new Node();
+		newnode->data=data;
+		newnode->next=*head;
+		*head=newnode;
+		last=newnode;
+		return;
+	}
 	Node *newnode=new Node();
 	newnode->data=data;
-	newnode->next=*head;
-	*head=newnode;
+	newnode->next=NULL;
+	last->next=newnode;
+	last=newnode;		
 }
 void print(Node* node){
 	while(node != NULL){
