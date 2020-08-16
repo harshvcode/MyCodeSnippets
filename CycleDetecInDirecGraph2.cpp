@@ -1,4 +1,6 @@
-/**/
+/*
+	detect cycle in directed graph using only one boolean vector 'vis', while in previous code i used recstack named additional vector
+*/
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
