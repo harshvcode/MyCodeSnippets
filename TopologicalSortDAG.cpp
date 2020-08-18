@@ -37,7 +37,7 @@ void topSort(){
 	FR(i, 1, n, 1)
 		if(! vis[i])
 			topSorter(i);
-	//Now All the elements are int stac after sorting, So now just pop and print
+	//Now All the elements are in the stac after sorting, So now just pop and print
 	while(! stac.empty())
 		cout << stac.top() << " -> ",
 		stac.pop();
