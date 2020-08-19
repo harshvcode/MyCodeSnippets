@@ -1,5 +1,5 @@
 /* Count no. of digits in a decimal number( formula= (int)log10(num) +  1)
- * author: h2000vs223 | harshvs.official223@gmail.com
+ * author: harshvcode | harshvs.official223@gmail.com
  * timestamp: 13:24 27-05-2020
  */
 #include <bits/stdc++.h>
