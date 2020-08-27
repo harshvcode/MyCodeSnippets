@@ -1,4 +1,7 @@
-/*****Author	:	harshvcode*****/
+/*
+__________By__________
+______harshvcode______
+*/
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
@@ -63,8 +66,24 @@ T pow(T a, T b){
     }
     return res;
 }
+void SieveOfEratosthenes(int n) 
+{
+    VT<bool> prime(n+1, 1);
+	for (int p=2; p*p<=n; p++) 
+    { 
+        if (prime[p]) 
+        {
+            for (int i=p*2; i<=n; i += p) 
+                prime[i] = 0; 
+        } 
+    } 
+    for (int p=2; p<=n; p++) 
+       if (prime[p]) 
+          cout << p << " "; 
+}
 int main(){
 	ios_base::sync_with_stdio(0);
 	cin.tie(0);
+	freopen("inp.txt","r", stdin);
 	return 0;
 }
