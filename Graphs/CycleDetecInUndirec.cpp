@@ -46,15 +46,6 @@ void bfs(int v){
 		}
 	}
 }
-bool detecCycleInDir(int v){
-	if(vis[v]) return 1;
-	vis[v]=1;
-	for(auto e:adj[v]){
-		if(vis[e]) return 1;
-		else return detecCycleInDir(e);
-	}
-	return false;
-}
 void add(int v1, int v2){
 	adj[v1].PB(v2);
 	adj[v2].PB(v1);
