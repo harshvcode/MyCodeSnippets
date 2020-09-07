@@ -47,7 +47,10 @@ void detecCycleInUnd(int v){
 	cout << v << ' ';
 	for(auto e:edges[v]){
 		if(color[e] == 0) detecCycleInUnd(e);
-		else if(color[e] == 2) cyc=1;
+		else if(color[e] == 2){
+			cyc=1;
+			return;
+		}
 	}
 	color[v]=2;//black
 }
