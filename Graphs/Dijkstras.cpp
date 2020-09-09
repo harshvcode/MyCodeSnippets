@@ -45,11 +45,11 @@ void pre(){
 	freopen("out.txt", "w", stdout);
 	#endif
 }
-void dijkstras(VT<PII> adj[], VT<int>& dist){
+void dijkstras(VT<PII> adj[], VT<int>& dist, int& from){
 	int u, v, wt, i;
 	set<PII> st;
-	dist[1]=0;//calculating distance from 1 to all vertices
-	st.insert(MP(1, 0));//MP(from, selfDistance)
+	dist[from]=0;
+	st.insert(MP(from, 0));//MP(from, selfDistance)
 	while(! st.empty()){
 		u=st.begin()->F;
 		st.erase(st.begin());
@@ -66,6 +66,18 @@ void dijkstras(VT<PII> adj[], VT<int>& dist){
 		}
 	}
 }
+/*Sample Input
+8
+1 2 10
+1 3 20
+1 4 30
+2 5 40
+3 7 100
+5 6 50
+7 8 39
+6 8 60
+5
+*/
 int32_t main(){
 	pre();
 	int n;
@@ -77,8 +89,11 @@ int32_t main(){
 		cin >> u >> v >> wt;
 		adj[u].PB(MP(v, wt));
 	}
-	dijkstras(adj, dist);
+	int from;//from which vertex to find minimum cost path
+	cin >> from;
+	dijkstras(adj, dist, from);
 	FR(i, 1, n, 1)
-		cout << "Min. distance from 1 to " << i << " : " << dist[i] << '\n';
+		cout << "Min. distance from " << from,
+		cout <<" to " << i << " : " << dist[i] << '\n';
 	return 0;
 }
