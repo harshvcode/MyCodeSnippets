@@ -58,7 +58,8 @@ void dijkstras(VT<PII> adj[], VT<int>& dist, int& from){
 			wt=adj[u][i].S;
 			if(dist[v] > dist[u] + wt){
 				if(dist[v] != INF){
-					st.erase(st.find(MP(v, dist[v])));
+					auto it=st.find(MP(v, dist[v]));
+					if(it != st.end()) st.erase(it);
 				}
 				dist[v]=dist[u]+wt;
 				st.insert(MP(v, dist[v]));
