@@ -2,6 +2,7 @@
 #include <ext/pb_ds/assoc_container.hpp>
 using namespace __gnu_pbds;
 using namespace std;
+#define harshvcode ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 #define fr first
 #define sc second
 #define int long long
@@ -16,24 +17,19 @@ using namespace std;
 #define zb(x) __builtin_ctzll(x)
 #define md 1000000007
 #define inf 1e18
+#define trv(x,y) for(auto x:y)
+#define loop(a,b,c,d) for(auto a=b;(d>0)?a<=c:a>=c;a+=(d))
 #define sz(x) (int)(x.size())
 #define all(x) x.begin(),x.end()
 #define mk(arr,n,type) type *arr=new type[n];
 #define w(x) int x; cin>>x; ++x; while(--x)
 mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
 typedef tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_update> pbds;
-void pre(){
-	ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-#ifndef ONLINE_JUDGE
-	freopen("inp.txt", "r", stdin);
-	freopen("out.txt", "w", stdout);
-#endif
-}
 void solve(){
 }
 int32_t main()
 {
-	pre();
+	harshvcode;
 	w(tc)
 		solve();
 	return 0;
