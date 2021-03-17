@@ -1,58 +1,36 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.StringTokenizer;
-public class Main{
-	static class harshvcode
-    {
-        BufferedReader br;
-        StringTokenizer st;
-        public harshvcode()
-        {
-            br = new BufferedReader(new InputStreamReader(System.in));
-        }
-        String next()
-        {
-            while (st == null || !st.hasMoreElements())
-            {
-                try
-                {
-                    st = new StringTokenizer(br.readLine());
-                }
-                catch (IOException  e)
-                {
-                    e.printStackTrace();
-                }
-            }
-            return st.nextToken();
-        }
-        int nextInt()
-        {
-            return Integer.parseInt(next());
-        }
-        long nextLong()
-        {
-            return Long.parseLong(next());
-        }
-        double nextDouble()
-        {
-            return Double.parseDouble(next());
-        }
-        String nextLine()
-        {
-            String str = "";
-            try
-            {
-                str = br.readLine();
-            }
-            catch (IOException e)
-            {
-                e.printStackTrace();
-            }
-            return str;
-        }
-    }
-	public static void main(String[] args){
-		harshvcode in = new harshvcode();
+import java.util.*;
+import java.io.*;
+
+class Main {
+	public static void main(String[] args) throws IOException {
+		Reader.init(System.in);
 	}
+}
+
+class Reader {
+    static BufferedReader reader;
+    static StringTokenizer tokenizer;
+
+    /** call this method to initialize reader for InputStream */
+    static void init(InputStream input) {
+        reader = new BufferedReader(new InputStreamReader(input));
+        tokenizer = new StringTokenizer("");
+    }
+
+    /** get next word */
+    static String next() throws IOException {
+        while (! tokenizer.hasMoreTokens()) {
+            //TO DO add check for eof if necessary
+            tokenizer = new StringTokenizer(reader.readLine());
+        }
+        return tokenizer.nextToken();
+    }
+
+    static int nextInt() throws IOException {
+        return Integer.parseInt(next());
+    }
+	
+    static double nextDouble() throws IOException {
+        return Double.parseDouble(next());
+    }
 }
