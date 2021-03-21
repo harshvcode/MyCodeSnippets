@@ -44,7 +44,7 @@ class Reader {
         tokenizer = new StringTokenizer("");
     }
 
-    /** get next word */
+    /** get next word*/
     static String next() throws IOException {
         while (! tokenizer.hasMoreTokens()) {
             //TO DO add check for eof if necessary
