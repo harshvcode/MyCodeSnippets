@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-class Node {//class to create nodes
+class Node {//class to create the nodes
 	int key;
 	Node left, right;
 	Node(int item) {
