@@ -1,4 +1,3 @@
-//harshvcode
 import java.util.*;	
 import java.io.*;
 
@@ -154,14 +153,14 @@ class Graph {
 		*/
 	boolean cycle_found=false;
 	int[] color_box;
-	void color_ini() {
+	void color_ini() {//call this first
 		cycle_found = false;
 		reset_looked(false);
 		color_box = new int[max_size];
 		for(int i = 0; i < max_size; ++i) color_box[i] = 0;
 		//System.out.println("Hey " + Arrays.toString(color_box));
 	}
-	void cycle_det_dir(int x) {
+	void cycle_det_dir(int x) {//then call this
 		//System.out.println("a");
 		looked[x] = true;
 		//System.out.println("b");
