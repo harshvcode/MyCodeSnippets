@@ -3,24 +3,24 @@ import java.io.*;
 //24m562t
 public class Main implements Comparator<String> {
 	
-	/**************Number Sorter String Positive*********/
-	public int compare(String a, String b) {
-		if(a.length() == b.length()) return a.compareTo(b);
-		else if(a.length() < b.length()) return -1;
-		else return 1;
-	}
+  /**************Number Sorter String Positive*********/
+  public int compare(String a, String b) {
+    if(a.length() == b.length()) return a.compareTo(b);
+	else if(a.length() < b.length()) return -1;
+	else return 1;
+  }
 	
-	/*******************SOLVER**********************/
-	static void solve(InputReader in) throws IOException {//System.out.println(
-		in.close();
-	}
+  /*******************SOLVER**********************/
+  static void solve(InputReader in) throws IOException {//System.out.println(
+    in.close();
+  }
 
-	/*******************MAIN************************/
-	public static void main(String[] args) throws IOException {
-		InputReader in = new InputReader();
-		int tc = in.nextInt() + 1;
-		while(--tc > 0) solve(in);
-	}
+  /*******************MAIN************************/
+  public static void main(String[] args) throws IOException {
+	InputReader in = new InputReader();
+	int tc = in.nextInt() + 1;
+	while(--tc > 0) solve(in);
+  }
 }
 /**********************FAST READER*********************/
 class InputReader {
