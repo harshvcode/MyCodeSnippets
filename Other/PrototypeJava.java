@@ -31,8 +31,8 @@ class Temp {
 class Main {
   /*******************MAIN************************/
   public static void main(String[] args) throws IOException {
-  	Temp late = new Temp();
-  	late.dedidec();
+    Temp late = new Temp();
+    late.dedidec();
   }
 }
 /**********************FAST READER*********************/
