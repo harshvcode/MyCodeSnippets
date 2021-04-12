@@ -1,36 +1,43 @@
+#pragma GCC optimize("Ofast")
+#pragma GCC target("avx,avx2,fma")
 #include <bits/stdc++.h>
-#include <ext/pb_ds/assoc_container.hpp>
-using namespace __gnu_pbds;
 using namespace std;
-#define harshvcode ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-#define fr first
-#define sc second
-#define int long long
-#define pb push_back
-#define mp make_pair
-#define pii pair<int,int>
-#define vi vector<int>
-#define mii map<int,int>
-#define pqb priority_queue<int>
-#define pqs priority_queue<int,vi,greater<int> >
-#define sb(x) __builtin_popcountll(x)
-#define zb(x) __builtin_ctzll(x)
-#define md 1000000007
-#define inf 1e18
-#define trv(x,y) for(auto x:y)
-#define loop(a,b,c,d) for(auto a=b;(d>0)?a<=c:a>=c;a+=(d))
-#define sz(x) (int)(x.size())
-#define all(x) x.begin(),x.end()
-#define mk(arr,n,type) type *arr=new type[n];
-#define w(x) int x; cin>>x; ++x; while(--x)
-mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
-typedef tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_update> pbds;
-void solve(){
-}
-int32_t main()
+typedef long double LD;
+typedef long long LL;
+#define PB push_back
+#define MP make_pair
+#define FR(i, a, b, s) for (auto i=(a); (s)>0?i<=(b):i>=(b); i+=(s))
+#define CAMAX(a,b) a = max(a,b)
+#define CAMIN(a,b) a = min(a,b)
+#define ALL(v) v.begin(),v.end()
+typedef map<int,int> MII;
+typedef vector<int> VI;
+typedef vector<VI> VVI;
+typedef pair<int,int> PII;
+typedef vector<PII> VPII;
+#define F first
+#define S second
+#define SB(x) __builtin_popcountll(x)
+#define ZB(x) __builtin_ctzll(x)
+#define MOD 1000000007
+#define INF 1e18
+#define PQ(type) priority_queue<type>
+#define PQD(type) priority_queue<type,vector<type>,greater<type> >
+#define WL(t) while(t--)
+#define SZ(x) ((int)(x).size())
+#define INRNG(i,a,b) ((i>=min(a,b)) && (i<=max(a,b)))
+#define FAST_IO ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+
+void solve()
 {
-	harshvcode;
-	w(tc)
-		solve();
-	return 0;
+}
+signed main()
+{
+    FAST_IO
+    int ntc = 1;
+    //cin >> ntc;
+    FR(tc, 1, ntc, 1)
+    {
+        solve();
+    }
 }
