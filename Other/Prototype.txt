@@ -17,8 +17,11 @@ using namespace std;
 #define zrobits(x) __builtin_ctzll(x)
 #define mod 1000000007
 #define inf 1e18
+#define all(x) x.begin(), x.end()
 #define ps(x, y) fixed << setprecision(y) << x
 #define mk(arr, n, type) type *arr = new type[n];
+#define itf(it, a) for (auto it = a.begin(); it != a.end(); ++it)
+#define itb(it, a) for (auto it = my_vector.rbegin(); it != my_vector.rend(); ++it)
 #define w(x)  \
     int x;    \
     cin >> x; \
