@@ -21,7 +21,7 @@ using namespace std;
 #define ps(x, y) fixed << setprecision(y) << x
 #define mk(arr, n, type) type *arr = new type[n];
 #define itf(it, a) for (auto it = a.begin(); it != a.end(); ++it)
-#define itb(it, a) for (auto it = my_vector.rbegin(); it != my_vector.rend(); ++it)
+#define itb(it, a) for (auto it = a.rbegin(); it != a.rend(); ++it)
 #define w(x)  \
     int x;    \
     cin >> x; \
